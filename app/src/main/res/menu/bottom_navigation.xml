@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:mrmplane="http://schemas.android.com/apk/res-auto"
+
+    
+   >
+    <item
+        android:id="@+id/workPlaneFragment"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/tasks_navigation"
+        android:title="Задачи"
+        android:visible="true"
+        mrmplane:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/chatFragment"
+        android:checkable="false"
+        android:enabled="false"
+        android:icon="@drawable/chat_navigation"
+        android:title="Чат (скоро)"
+        mrmplane:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/noteFragment"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/setting_navigation"
+        android:title="Настройки"
+        android:visible="true"
+        mrmplane:showAsAction="ifRoom|withText" />
+
+
+
+</menu>

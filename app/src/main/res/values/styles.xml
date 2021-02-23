@@ -1,0 +1,387 @@
+<resources>
+    <!--Новый дзайн номер 3 -->
+    <!--заголовок текста-->
+    <style name="headlineText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:translationY">-0.28sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+    </style>
+
+    <!--текст добавить работу -->
+    <style name="textButtonAdd">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.09</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:textColor">#DEFFFFFF</item>
+        <item name="android:background">@drawable/add_work</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">24dp</item>
+        <item name="android:text">@string/addWork</item>
+    </style>
+
+    <!--ячейка фото-->
+    <style name="photo">
+        <item name="android:background">@drawable/hollow_photo_bgd</item>
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <!--Значек камеры-->
+    <style name="cameraButton">
+        <item name="android:layout_width">47dp</item>
+        <item name="android:layout_height">47dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/circle_black_bgd</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:src">@drawable/camera_ico</item>
+    </style>
+    <!--Заглавный текст доп работ-->
+    <style name="textHeadAddWork">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0.03</item>
+        <item name="android:textColor">@color/textHeadBlack</item>
+    </style>
+    <!--второстепенный текст доп работ-->
+    <style name="textSecondAddWork">
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            @color/secondTextBlack
+        </item>
+    </style>
+
+    <!--отмена в доп работах-->
+    <style name="cancelRed">
+        <item name="android:background">@drawable/cancel_red</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/colorCancelRed</item>
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <!--согласие-->
+    <style name="ok">
+        <item name="android:background">@drawable/ok_black</item>
+        <item name="android:layout_width">160dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/colorWhite</item>
+    </style>
+
+    <!--серый текст подсказки-->
+    <style name="textFIO">
+        <item name="android:textSize">
+            12sp
+        </item>
+        <item name="android:letterSpacing">
+            0.03
+        </item>
+        <item name="android:textColor">
+            #99000000
+        </item>
+    </style>
+
+    <!--текст для основной кнопки-->
+    <style name="textForButtonOsnovnoy">
+
+        <item name="android:textSize">
+            15sp
+        </item>
+
+        <item name="android:letterSpacing">
+            0.04
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+
+    <!--текст для профиля-->
+    <style name="textLiveProfile">
+        <item name="android:textSize">
+            16sp
+        </item>
+        <item name="android:letterSpacing">
+            0.01
+        </item>
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+
+    <!--Стиль текста для отображениии в статусных фильтрах-->
+    <style name="styleTextStatusFilter">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentTransitions">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+    <!--    <style name="Material" parent="Widget.MaterialComponents.CompoundButton.CheckBox">-->
+    <!--    </style>-->
+
+    <!--    <item name="checkboxStyle">@style/Widget.MaterialComponents.CompoundButton.CheckBox</item>-->
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/colorBlack</item>
+        <item name="colorControlActivated">@color/colorCorporateRed</item>
+    </style>
+
+    <style name="AppTheme.TabHost">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorBlack</item>
+
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabPaddingStart">4dp</item>
+        <item name="tabPaddingEnd">4dp</item>
+        <item name="android:background">@drawable/tab_background</item>
+        <item name="tabBackground">@drawable/tab_color_selecter</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">@color/colorWhite</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:colorPrimary">@color/colorWhite</item>
+        <item name="android:colorAccent">@color/colorOrangeTab</item>
+    </style>
+
+    <!--<style name="Theme.Transparent" parent="android:Theme">-->
+
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/colorTransparentActivity</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+
+    <style name="MySwitch" parent="Theme.AppCompat.Light">
+        <!-- активное состояние (30% прозрачности для фона) -->
+        <item name="colorControlActivated">@color/colorCheckBoxActiv</item>
+        <!-- неактивное состояние ползунка -->
+        <item name="colorSwitchThumbNormal">@color/colorPrimary</item>
+        <!-- цвет дорожки для неактивного состояния (30% прозрачности) -->
+        <item name="android:colorForeground">@color/colorCheckBoxNoActiv</item>
+    </style>
+
+    <style name="RepairSwitch" parent="Theme.AppCompat.Light">
+        <!-- активное состояние (30% прозрачности для фона) -->
+        <item name="colorControlActivated">@color/colorGreen</item>
+
+        <!-- неактивное состояние ползунка -->
+        <item name="colorSwitchThumbNormal">@color/colorCorporateRed</item>
+
+        <!-- цвет дорожки для неактивного состояния (30% прозрачности) -->
+        <item name="android:colorForeground">@color/colorCorporateRed</item>
+    </style>
+
+    <style name="AppTheme.EditText">
+        <item name="android:layout_width">288dp</item>
+        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="AppTheme.GreenButton">
+        <item name="android:layout_height">36dp</item>
+        <item name="android:background">@drawable/green_button_background</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:translationZ">2dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+
+    </style>
+
+
+    <style name="AppTheme.PassportTextViewBold">
+
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="AppTheme.PassportTextView">
+
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:gravity">center_horizontal</item>
+
+    </style>
+
+
+    <style name="AppTheme.PassportLayout">
+
+        <item name="android:elevation">4dp</item>
+        <item name="android:translationZ">2dp</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+
+    </style>
+
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/spinner_ic</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:popupBackground">#FFFFFFFF</item>
+
+    </style>
+
+    <!-- styles.xml lvv фирма-->
+    <style name="text_gray_for_fragment">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#AB000000</item>
+    </style>
+
+    <!-- styles.xml lvv ул.-->
+    <style name="text_black_gray_for_fragment">
+        <item name="android:textSize">
+            13sp
+        </item>
+        <item name="android:textColor">
+            #BF000000
+        </item>
+    </style>
+
+    <!-- styles.xml lvv основной текст во фрагменте план работ -->
+    <style name="text_black_for_fragment">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- styles.xml lvv назначит время -->
+    <style name="set_time">
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+    </style>
+
+    <!-- styles.xml lvv серый стиль заголовка -->
+    <style name="grayHeaderStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#626262</item>
+    </style>
+
+    <!-- styles.xml lvv черный заголовок-->
+    <style name="blackHeadline">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Время отображаемый в плане -->
+    <style name="time_for_plan">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <!--новые статусы дизайн 3 на плане работ -->
+    <style name="grayStatusPlan">
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <!--адрес в плане работ-->
+    <style name="address_for_plan">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor"> #000000</item>
+    </style>
+    <!--стрелка назад черная-->
+    <style name="arrow_black">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginStart">6dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/arrow_3_black</item>
+    </style>
+
+    <!--значек doc -->
+    <style name="doc">
+        <item name="android:layout_width">44dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:layout_marginEnd">6dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:src">@drawable/doc_icon_blue</item>
+    </style>
+
+
+    <!-- styles.xml lvv text for spinner-->
+    <style name="set_text_spinner">
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColorPrimary">#2F61D5</item>
+    </style>
+
+    <!--тема для спинера-->
+    <style name="ThemeOverlay.For.Teplocom" parent="Platform.ThemeOverlay.AppCompat.Light">
+        <item name="android:textColorPrimary">@color/colorWhite</item> //цвет текста в спиннере
+        <item name="colorControlNormal">@color/colorWhite</item> //цвет галки для открытия списка
+    </style>
+</resources>

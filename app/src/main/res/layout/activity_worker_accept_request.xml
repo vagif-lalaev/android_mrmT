@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorNavigationPlanFon">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorNavigationPlanFon">
+
+            <ImageButton
+                android:id="@+id/mBackBtn"
+                style="@style/arrow_black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="Работа"
+                android:textAppearance="@style/grayHeaderStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mBackBtn" />
+
+            <TextView
+                android:id="@+id/title_request"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="start"
+                android:text="Регламентное обслуживание узлов учёта"
+                android:textAppearance="@style/blackHeadline"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="17dp"
+                android:text="Конктактное лицо/клиент"
+                android:textAppearance="@style/grayHeaderStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title_request" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/black_btn_bgd2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+
+                <FrameLayout
+                    android:id="@+id/telefon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginTop="26dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="26dp"
+                    android:background="@drawable/circle_black_bgd"
+                    android:backgroundTint="@color/colorBlack"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/view77"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        app:srcCompat="@drawable/phone_ico_new" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginBottom="18dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/image_photo2" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="-----"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView9"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/organizationNameTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="7dp"
+                    android:text='"ЖСК-878 ТП"'
+                    android:textColor="@color/colorBlack"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/telefon"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView9"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9"
+                    app:layout_constraintVertical_bias="0.07999998" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="22dp"
+                android:text="Адрес проведения работ"
+                android:textAppearance="@style/grayHeaderStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="г.СПб., Олеко Дундича ул., д. 19 к.3"
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toStartOf="@+id/locationButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+            <Button
+                android:id="@+id/locationButton"
+                android:layout_width="46dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="22dp"
+                android:background="@drawable/ic_location_button"
+                app:layout_constraintBottom_toTopOf="@+id/divider4"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/line_dotted"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="21dp"
+                android:text="Дата и время работ"
+                android:textAppearance="@style/grayHeaderStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+            <TextView
+                android:id="@+id/date_and_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Чт. 18.07, 10:00 - 14:00"
+                android:textColor="@color/colorBlack"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toStartOf="@+id/change_time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <Button
+                android:id="@+id/change_time"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="26dp"
+                android:background="@drawable/carry_over_3"
+                android:fontFamily="sans-serif-medium"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Перенести"
+                android:textAllCaps="false"
+                android:textColor="@color/colorStatusForFragmentBlue"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toTopOf="@+id/divider5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/line_dotted"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date_and_time" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="21dp"
+                android:text="Дополнительная информация"
+                android:textAppearance="@style/grayHeaderStyle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+            <TextView
+                android:id="@+id/commentaries_client"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="16dp"
+                android:text="Свяжитесь со мной, за сутки до начала работ."
+                android:textColor="@color/colorBlack"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+            <Button
+                android:id="@+id/mStartWorkBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/green_button"
+                android:paddingStart="16dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="4dp"
+                android:text="Начать выполнение"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/commentaries_client"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <LinearLayout
+                android:id="@+id/instrumentObzor"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider5">
+
+                <TextView
+                    android:id="@+id/textView2d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_vertical"
+                    android:text="Инструменты и материалы"
+                    android:textColor="@color/colorStatusForFragmentBlue"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:layout_weight="0.1"
+                    android:padding="10dp"
+                    android:src="@drawable/arrow_right" />
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/line_dotted"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/instrumentObzor" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+</ScrollView>

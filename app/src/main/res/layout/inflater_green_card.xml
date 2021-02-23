@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/workContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorNavigationPlanFon">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mWorkField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/selsected_osnov_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <FrameLayout
+            android:id="@+id/mChatBtn"
+            android:layout_width="40dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_none_bgd_2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="40dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:src="@drawable/dialog_black_ico2" />
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/mColorFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/round_status_red_fragment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/StatusTextFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="6dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/urgentFragment"
+                android:textAllCaps="false"
+                android:textColor="@color/colorStatusForFragmentRed"
+                android:textSize="13sp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/mTimeSetFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/set_time_fragment_black"
+            app:layout_constraintStart_toEndOf="@+id/mColorFrame"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/setTimeTemp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_horizontal|top"
+                android:text="@string/set_time"
+                android:textAppearance="@style/set_time" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imagePlane"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="11dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_photo2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+                 <TextView
+            android:id="@+id/mLocationTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="7dp"
+            android:gravity="top"
+            android:text="ул. Шмидта д. 127, корпус 1"
+            android:textAppearance="@style/text_black_gray_for_fragment"
+            app:layout_constraintBottom_toTopOf="@+id/imagePlane"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="16dp"
+            android:text="Регламентное обслуживание"
+            android:textAppearance="@style/text_black_for_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mTimeSetFragment" />
+
+        <TextView
+            android:id="@+id/mOrganizationNameTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center|start|center_horizontal"
+            android:text="ЗАО &quot;Институт сетевых технологий&quot;"
+            android:textAppearance="@style/text_gray_for_fragment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mChatBtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imagePlane"
+            app:layout_constraintTop_toBottomOf="@+id/mLocationTxt"
+            app:layout_constraintVertical_bias="0.120000005" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mWorkField">
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

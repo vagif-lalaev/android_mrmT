@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/workContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorNavigationPlanFon">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mWorkField"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/selsected_osnov_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <!--<FrameLayout
+            android:id="@+id/mColorFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_status_red_fragment"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+        </FrameLayout>-->
+
+
+        <TextView
+            android:id="@+id/StatusTextFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="22dp"
+            android:gravity="center_horizontal|top"
+            android:text="@string/plannedFragment"
+            android:textAllCaps="false"
+            android:textAppearance="@style/grayStatusPlan"
+            android:textColor="@color/colorStatusPlanGry"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/mLocationTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="top"
+            android:text="ул. Шмидта д. 127, корпус 1"
+            android:textAppearance="@style/address_for_plan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timeForPlan" />
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:text="Регламентное обслуживание"
+            android:textAppearance="@style/text_black_for_fragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/StatusTextFragment"
+            android:lineSpacingExtra="3sp"
+            android:translationY="-1.45sp"/>
+
+
+        <TextView
+            android:id="@+id/mOrganizationNameTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center|start"
+            android:text="ЗАО &quot;Институт сетевых технологий&quot;"
+            android:textAppearance="@style/text_gray_for_fragment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mLocationTxt" />
+
+        <TextView
+            android:id="@+id/timeForPlan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:gravity="center|start"
+            android:text="14.02.2020 10:00"
+            android:textAppearance="@style/time_for_plan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mWorkField">
+
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

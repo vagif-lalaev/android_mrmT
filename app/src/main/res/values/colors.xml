@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Новый дизайн номер 3 -->
+    <color name="textAddWork">#DEFFFFFF</color>
+    <color name="fon">#F2F2F2</color>
+    <color name="colorStatusForFragmentRed">#E74646</color>
+    <color name="colorStatusPlanGry">#647B88</color>
+    <color name="colorGreenNew">#00D85A</color>
+    <color name="colorStatusForFragmentRedNo">#B00020</color>
+    <color name="colorStatusForFragmentOranch">#ED9A1D</color>
+    <color name="White">#FFFFFF</color>
+    <color name="fonAddWork">#ECECEC</color>
+    <color name="textHeadBlack">#000000</color>
+    <color name="secondTextBlack">#BF000000</color>
+    <color name="colorLinePunctureGry">#4B4B4B</color>
+    <color name="colorGrayText">#626262</color>
+    <color name="colorBluAction">#2F61D5</color>
+    <color name="colorCancelRed">#FF5252</color>
+    <color name="colorCheckBoxFon">#FCFCFC</color>
+    <color name="colorCheckBoxNoActiv">#A3A3A3</color>
+    <color name="colorCheckBoxActiv">#FFCF92</color>
+    <color name="colorHintTextLoginPassword">#99000000</color>
+    <color name="colorOrangeTab">#F8971D</color>
+    <color name="colorSearch">#DE000000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#BF000000</color> //цвет бара
+    <color name="colorPrimaryGet">#1b266c</color>
+    <color name="colorAccent">#292929</color>
+    <color name="colorDialogStart">#019CBA</color>
+    <color name="colorDialogEnd">#252E5E</color>
+    <color name="colorBlueGray">#253D4B</color>
+    <color name="colorGray">#4A4A4A</color>
+    <color name="colorCorporateRed">#cc1e11</color>
+    <color name="colorLight">#253D4B</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorLightGray">#E9E9E9</color>
+    <color name="color2Gray">#DBDADA</color>
+    <color name="color3Gray">#D1D1D1</color>
+    <color name="colorMiddleGray">#d7d7d7</color>
+    <color name="colorDarkerGray">#B1B0B0</color>
+    <color name="colorNature">#E4E4E4</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGreen">#66BD1E</color>
+    <color name="colorBrown">#F1857D3D</color>
+    <color name="colorBrownDark">#f14d5023</color>
+    <color name="colorLineGrey">#464444</color>
+    <color name="colorDarkGreen">#f1213d1a</color>
+    <color name="colorPrimaryButton">#737db9</color>
+    <color name="colorNotesBackground">#C4C4C4</color>
+    <color name="colorPassportBackground">#656b7c73</color>
+    <color name="colorTransparent">#6fffffff</color>
+
+    <color name="colorTransparentActivity">#C3000000</color>
+    <color name="colorOrange">#ffab00</color>
+    <color name="colorTransparentOrange">#CEB87A</color>
+    <color name="colorTransparentGreen">#73E00E</color>
+    <color name="colorYellow">#ffea00</color>
+    <color name="colorTransparentYellow">#fff176</color>
+    <color name="colorBlue">#4dd0e1</color>
+    <color name="colorLightText">#616161</color>
+    <color name="colorDarkGray">#232A2D</color>
+    <color name="colorActMain">#eceff1</color>
+    <color name="colorAct1">#e3e5e6</color>
+    <color name="colorAct2">#a3a69c</color>
+    <color name="colorAct3">#bfc2d1</color>
+    <color name="colorAct4">#eceff1</color>
+    <color name="colorAct5">#eceff1</color>
+    <color name="colorComplectationPink">#E5DEE5</color>
+    <color name="transparentRed">#ff4e4e</color>
+    <color name="fullRed">#d50000</color>
+    <color name="T0Color">#FFE728</color>
+    <color name="T1Color">#FFAA2A</color>
+    <color name="T2Color">#F55F5F</color>
+
+    <!--LVV-->
+    <color name="noWorks">#40000000</color>
+    <color name="colorNavigationFalse">#BD000000</color>
+    <color name="colorNavigationBlack">#292929</color>
+    <color name="colorNavigationPlanFon">#F2F2F2</color>
+    <!--status for fragment-->
+
+    <color name="colorStatusForFragmentBlue">#2F61D5</color>
+    <color name="colorOrangeNew">#C19662</color>
+
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/visionWork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="18dp"
+            android:gravity="top"
+            android:isScrollContainer="false"
+            android:letterSpacing="0.03"
+            android:lineSpacingExtra="2sp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="horizontal"
+            android:text="Работы"
+            android:textColor="@color/colorBlack"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:translationY="-1.19sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mCriteriaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/ic_reglament"
+        android:elevation="4dp"
+        android:minHeight="60dp"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/visionWork">
+
+        <TextView
+            android:id="@+id/mCriteriaTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="17dp"
+            android:gravity="top"
+            android:letterSpacing="0.03"
+            android:lineSpacingExtra="6sp"
+            android:text="Осмотр, донастройка УУТЭ"
+            android:textColor="@color/colorBlack"
+            android:textSize="15sp"
+            android:translationY="-3.21sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/frameLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Switch
+                android:id="@+id/mCriteriaSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/fon_for_checkbox"
+                android:backgroundTint="@color/color3Gray"
+                android:padding="8dp"
+                android:text=""
+                android:theme="@style/MySwitch" />
+        </FrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

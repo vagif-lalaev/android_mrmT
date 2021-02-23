@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNavigationPlanFon">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/headlineText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/rectangle"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@+id/constraintLayout2"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/setting_fon">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="99dp"
+            android:layout_marginTop="13dp"
+            android:gravity="top"
+            android:lineSpacingExtra="0sp"
+            android:text="@string/photoProfil"
+            android:textAppearance="@style/text_black_gray_for_fragment" />
+
+        <View
+            android:id="@+id/forma1"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/barer_from_text_profil" />
+
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="139dp"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/fio"
+            android:textAppearance="@style/textFIO"
+            android:translationY="-0.97sp" />
+
+        <View
+            android:id="@+id/forma"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/barer_from_text_profil" />
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="19dp"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="@string/email"
+            android:textAppearance="@style/textFIO"
+            android:translationY="-0.97sp" />
+
+        <TextView
+            android:id="@+id/textFIO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/forma1"
+            android:layout_alignTop="@+id/forma1"
+            android:layout_alignEnd="@+id/forma1"
+            android:layout_alignBottom="@+id/forma1"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="ФИО"
+            android:textAppearance="@style/textLiveProfile" />
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/forma"
+            android:layout_alignTop="@+id/forma"
+            android:layout_alignEnd="@+id/forma"
+            android:layout_alignBottom="@+id/forma"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="Email"
+            android:textAppearance="@style/textLiveProfile" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/photoUsers"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/constraintLayout2"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/colorNavigationPlanFon">
+
+        <FrameLayout
+            android:id="@+id/photoUsersFon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorWhite" />
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/photoAva"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/image_profil"
+            app:border_color="#000000"
+            app:border_width="2dp" />
+
+    </FrameLayout>
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/photoUsers"-->
+    <!--        android:layout_width="72dp"-->
+    <!--        android:layout_height="72dp"-->
+    <!--        android:layout_below="@+id/constraintLayout2"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginTop="28dp"-->
+    <!--        android:elevation="8dp"-->
+    <!--        app:srcCompat="@drawable/image_profil" />-->
+
+    <Button
+        android:id="@+id/exitForAccount"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/button_osnovnoy_red"
+        android:text="@string/exitAccount"
+        android:textAppearance="@style/textForButtonOsnovnoy" />
+
+
+</RelativeLayout>

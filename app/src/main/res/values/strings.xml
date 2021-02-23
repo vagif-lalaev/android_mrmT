@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">МРМ Теплоком</string>
+
+    <string name="app_settings">teplocom_settings</string>
+
+    <!-- статусы для фрагментов /-->
+    <string name="urgentFragment">Срочная</string>
+    <string name="plannedFragment">Плановая</string>
+    <string name="additionalFragment">Дополнительная</string>
+    <string name="additionalOK">Выполнена</string>
+    <string name="inWork">В работе...</string>
+    <string name="rejected">Отклонен</string>
+    <string name="set_time">Назначить время</string>
+
+    <string-array name="filter">
+        <item>За все время</item>
+        <item>Сутки</item>
+        <item>Неделя</item>
+        <item>Месяц</item>
+        <item>Квартал</item>
+    </string-array>
+
+<!--//////////////////////////////////////////////////////////-->
+    <!--Новый дзайн номер 3 -->
+    <string name="version">Версия ПО - 2.0.0</string>
+    <string name="settings">Настройки</string>
+    <string name="addWork">+ добавить</string>
+    <string name="dopWork">Дополнительная работа</string>
+    <string name="secondHeadAddWork">Требуется предварительное согласование с Заказчиком</string>
+    <string name="textPhoto">Фото</string>
+    <string name="cancel">Отменить</string>
+    <string name="titleWork">Наименование работы</string>
+    <string name="ok_to_approve">Согласовать</string>
+    <string name="add">Добавить</string>
+    <string name="newRecommendation">Новая рекомендация</string>
+    <string name="secondTextForNewRecommendation">Устно разъясните Заказчику основания для рекомендации</string>
+    <string name="specification">Описание</string>
+    <string name="hintTextSpecification">Нажмите для ввода текста</string>
+    <string name="attention">Внимание!</string>
+    <string name="workClose">Вы действительно хотите завершить работу?</string>
+    <string name="deleteEvent">Удалить событие?</string>
+    <string name="photoProfil">Фото профиля</string>
+    <string name="fio">ФИО</string>
+    <string name="email">Email (Имя пользователя)</string>
+    <string name="exitAccount">Выйти из аккаунта</string>
+    <string name="hintTextAddWork">Введите название работы</string>
+    <string name="limit">Лимит исчерпан!</string>
+
+    <!--статус фильтров-->
+    <string name="srochnyyeFilter">Срочные</string>
+    <string name="planFiltr">Плановые</string>
+    <string name="okFilter">Выполненные</string>
+    <string name="OtklonFilter">Отклоненные</string>
+    <string name="inWorkFilter">В работе</string>
+    <string name="dopFilter">Дополнительн.</string>
+
+    <!--ip server-->
+    <string name="BASE_URL">http://81.3.158.*</string>   //внеший
+
+
+</resources>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorNavigationPlanFon"
+    tools:context=".ui.activity.MainActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mTimeRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorNavigationPlanFon"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/main.collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_collapseMode="parallax"
+                app:layout_collapseParallaxMultiplier="0.9"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@color/colorWhite"
+                    app:layout_collapseMode="parallax"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed">
+
+
+                    <Spinner
+                        android:id="@+id/spinnerWorks"
+                        android:layout_width="170dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="6dp"
+                        android:background="@color/colorWhite"
+                        android:entries="@array/filter"
+                        android:hapticFeedbackEnabled="false"
+                        android:scrollbarSize="4dp"
+                        android:textAlignment="viewStart"
+                        android:theme="@style/ThemeOverlay.For.Teplocom"
+                        app:layout_constraintStart_toEndOf="@+id/textView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/primaryTextForSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="6dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center_vertical"
+                        android:letterSpacing="-0.02"
+                        android:lineSpacingExtra="0sp"
+                        android:text="сутки"
+                        android:textAllCaps="false"
+                        android:textColor="#2F61D5"
+                        android:textSize="20sp"
+                        app:layout_constraintStart_toEndOf="@+id/textView"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_arrow_for_spinner"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="27dp"
+                        app:layout_constraintStart_toEndOf="@+id/primaryTextForSpinner"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/headlineText"
+                        android:includeFontPadding="false"
+                        android:text="Задачи"
+                        android:textAlignment="viewStart"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
+
+
+
+                    <SearchView
+                        android:id="@+id/searchView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="6dp"
+                        android:maxWidth="500dp"
+                        android:queryHint="Поиск"
+                        android:background="@color/White"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                </android.support.constraint.ConstraintLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorNavigationPlanFon"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                    app:layout_scrollFlags="scroll|enterAlways">
+
+                    <!--<SearchView
+                        android:id="@+id/searchView"
+                        style="@android:style/Widget.Material.Light.SearchView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/search_fiel_plan"
+                        android:iconifiedByDefault="false"
+                        android:queryHint="Search"
+                        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+                    &lt;!&ndash;android:queryBackground="#808E8E93"&ndash;&gt;-->
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="24dp"
+                            android:orientation="horizontal">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/checkBoxSroch"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:button="@drawable/status_red"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.498"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="33dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:text="@string/srochnyyeFilter"
+                                    android:textAppearance="@style/styleTextStatusFilter"
+                                    app:layout_constraintBottom_toBottomOf="@+id/checkBoxSroch"
+                                    app:layout_constraintEnd_toEndOf="@+id/checkBoxSroch"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/checkBoxSroch"
+                                    app:layout_constraintTop_toTopOf="@+id/checkBoxSroch" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/checkBoxPlan"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:button="@drawable/status_gray"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.498"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="33dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:text="@string/planFiltr"
+                                    android:textAppearance="@style/styleTextStatusFilter"
+                                    app:layout_constraintBottom_toBottomOf="@+id/checkBoxPlan"
+                                    app:layout_constraintEnd_toEndOf="@+id/checkBoxPlan"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/checkBoxPlan"
+                                    app:layout_constraintTop_toTopOf="@+id/checkBoxPlan"/>
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/checkBoxDop"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/status_violet"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.498"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="33dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:text="@string/dopFilter"
+                                    android:textAppearance="@style/styleTextStatusFilter"
+                                    app:layout_constraintBottom_toBottomOf="@+id/checkBoxDop"
+                                    app:layout_constraintEnd_toEndOf="@+id/checkBoxDop"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/checkBoxDop"
+                                    app:layout_constraintTop_toTopOf="@+id/checkBoxDop" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/checkBoxOK"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/status_green"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.498"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="33dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:text="@string/okFilter"
+                                    android:textAppearance="@style/styleTextStatusFilter"
+                                    app:layout_constraintBottom_toBottomOf="@+id/checkBoxOK"
+                                    app:layout_constraintEnd_toEndOf="@+id/checkBoxOK"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/checkBoxOK"
+                                    app:layout_constraintTop_toTopOf="@+id/checkBoxOK" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/checkBoxOtkl"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/status_red_black"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.498"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="33dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:text="@string/OtklonFilter"
+                                    android:textAppearance="@style/styleTextStatusFilter"
+                                    app:layout_constraintBottom_toBottomOf="@+id/checkBoxOtkl"
+                                    app:layout_constraintEnd_toEndOf="@+id/checkBoxOtkl"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/checkBoxOtkl"
+                                    app:layout_constraintTop_toTopOf="@+id/checkBoxOtkl" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/checkBoxInWork"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="8dp"
+                                    android:layout_weight="1"
+                                    android:button="@drawable/status_yellow"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="0.498"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="33dp"
+                                    android:layout_marginTop="6dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:text="@string/inWorkFilter"
+                                    android:textAppearance="@style/styleTextStatusFilter"
+                                    app:layout_constraintBottom_toBottomOf="@+id/checkBoxInWork"
+                                    app:layout_constraintEnd_toEndOf="@+id/checkBoxInWork"
+                                    app:layout_constraintHorizontal_bias="0.0"
+                                    app:layout_constraintStart_toStartOf="@+id/checkBoxInWork"
+                                    app:layout_constraintTop_toTopOf="@+id/checkBoxInWork" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                        </LinearLayout>
+
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+

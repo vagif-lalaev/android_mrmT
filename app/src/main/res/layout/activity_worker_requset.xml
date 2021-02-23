@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorNavigationPlanFon"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout4"
+        app:layout_constraintVertical_bias="1.0">
+
+    </android.support.v4.view.ViewPager>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/mTabLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mBackBtn"
+            app:tabIndicatorHeight="2dp"
+            app:tabIndicatorColor="@color/colorOrangeTab"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/MyCustomTabTextAppearance"
+            app:tabSelectedTextColor="@color/colorBlack"
+            app:tabTextColor="@color/colorNavigationFalse"
+            app:tabGravity="fill"
+
+            >
+
+            <android.support.design.widget.TabItem
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Monday" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Tuesday" />
+
+            <android.support.design.widget.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Wednesday" />
+        </android.support.design.widget.TabLayout>
+
+        <ImageView
+            android:id="@+id/info"
+            style="@style/doc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/title_request"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="6dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.01"
+            android:lineSpacingExtra="1sp"
+            android:singleLine="true"
+            android:text="Регламентное обслуживание узлов учёта"
+            android:textColor="@color/colorBlack"
+            android:textSize="20sp"
+            android:translationY="-0.28sp"
+            app:layout_constraintEnd_toStartOf="@+id/info"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/mBackBtn"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/mBackBtn"
+            style="@style/arrow_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:elevation="4dp"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/mEndWorkBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/green_button_background"
+            android:elevation="8dp"
+            android:text="Завершить выполнение"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp"
+            android:translationZ="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

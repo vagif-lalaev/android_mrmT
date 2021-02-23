@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLightGray"
+
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:background="@color/colorWhite"
+        android:elevation="4dp"
+        android:translationZ="2dp"
+        android:id="@+id/constraintLayout5">
+
+        <ImageView
+            android:id="@+id/photoResult_1"
+            style="@style/photo"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/frameLayoutCamera"
+            app:layout_constraintEnd_toStartOf="@+id/photoResult_2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <FrameLayout
+            android:id="@+id/deletePhoto1"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginBottom="33dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/photoResult_1"
+            app:layout_constraintStart_toStartOf="@+id/photoResult_1">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/delete_event" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/photoResult_2"
+            style="@style/photo"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/photoResult_3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/photoResult_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/deletePhoto2"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginBottom="33dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/photoResult_2"
+            app:layout_constraintStart_toStartOf="@+id/photoResult_2">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/delete_event" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/photoResult_3"
+            style="@style/photo"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toStartOf="@+id/photoResult_4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/photoResult_2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/deletePhoto3"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginBottom="33dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/photoResult_3"
+            app:layout_constraintStart_toStartOf="@+id/photoResult_3">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/delete_event" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/photoResult_4"
+            style="@style/photo"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toStartOf="@+id/frameLayoutCamera"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/photoResult_3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/deletePhoto4"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginBottom="33dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/photoResult_4"
+            app:layout_constraintStart_toStartOf="@+id/photoResult_4">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/delete_event" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayoutCamera"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="33dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/photoCamera"
+                style="@style/cameraButton"
+                tools:layout_editor_absoluteX="160dp"
+                tools:layout_editor_absoluteY="31dp" />
+        </FrameLayout>
+    </android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/mWorkRecycler"/>
+</android.support.constraint.ConstraintLayout>
